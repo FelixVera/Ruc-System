@@ -1,49 +1,47 @@
-# SISTEMA DE RUC.
+# RUC SYSTEM.
 
 
-Una aplicacion web de Django en subes un archivo txt, lo lee y lo ordena usando algoritmos de ordenamiento, tiene a su disposicion tambien un reporte PDF.
+A Django web application uploads a txt file, reads it and sorts it using sorting algorithms, and also provides a PDF report.
+
+
+## ✨ Main features
+
+This project demonstrates the use of Django business functions: 1. Customer CRUD operations. 2. Coordinate storage (Lat/Lon). 3. Interactive map display. 4. Direct link to Google Maps.
+
+* **Secure File Upload:** It allows the uploading of delimited text files (CSV, TXT).
+* **Intelligent Processing:** Use the Pandas library to read files with variable delimiters (| or tab \t), clean data (dropna) and load them into the database.
+* **Algorithmic Implementation:** It shows the implementation of sorting algorithms such as TimSort and Quicksort on the loaded data.
+* **PDF Report Generation:** Create dynamic, formatted PDF reports using the ReportLab library, ready to download.
+* **Load History:** It keeps a record of uploaded files (name and number of records).
 
 
 
-## ✨ Caracteristicas Principales
+## 🛠️ Technologies Used
 
-Este proyecto demuestra el uso de Django funciones de negocio: 1. CRUD de Clientes. 2. Almacenamiento de Coordenadas (Lat/Lon). 3. Visualizacion de Mapa Interactivo. 4. Enlace Directo a Google Maps.
-
-* **Carga Segura de Archivos:** Permite la subida de archivos de texto delimitados (CSV, TXT).
-* **Procesamiento Inteligente:** Utiliza la librería Pandas para leer archivos con delimitadores variables (| o tabulador \t), limpiar datos (dropna) y cargarlos a la base de datos.
-* **Implementación Algorítmica:** Muestra la implementación de algoritmos de ordenamiento como TimSort y Quicksort sobre los datos cargados.
-* **Generación de Reportes PDF:** Crea reportes dinámicos y formateados en PDF utilizando la librería ReportLab, listos para descargar.
-* **Historial de Cargas:** Mantiene un registro de los archivos subidos (nombre y número de registros).
-
-
-
-## 🛠️ Tecnologías Utilizadas
-
-* **Lenguaje:** Python 3.12.3
+* **Language:** Python 3.12.3
 * **Framework Web:** **Django**
 
 
 
 ---
 
-## 🚀 Instalación y Puesta en Marcha
+## 🚀 Installation and Start-up
 
-Sigue estos pasos para configurar y ejecutar el servidor de desarrollo de Django en tu máquina local.
 
-### 1. Clonar el Repositorio
+### 1. Clone the Repository
 
 ```bash
-git clone <URL de tu repositorio en GitHub>
+git clone <URL of your repository on GitHub>
 cd weather_project
 
 
 
 
-# Crear el entorno virtual
+# Create the virtual environment
 python3 -m venv env
 
-# Activar el entorno virtual
-# En Linux/macOS:
+# Activate the virtual environment
+# In Linux/macOS:
 source env/bin/activate
-# En Windows (CMD):
+# In Windows (CMD):
 # .\env\Scripts\activate
